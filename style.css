@@ -1,0 +1,652 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* amiprof */
+    width: 1920px;
+}
+#header{
+    /* Rectangle 41 */
+    width: 1920px;
+    height: 687px;
+    background: rgba(220, 146, 27, 0.6);
+}
+#logo{
+    /* logo */
+    width: 191.78px;
+    height: 74.84px;
+    position: absolute;
+    top: 17px;
+    left: 360px;
+}
+#header_title{
+    /* nav 1 */
+    width: 685px;
+    height: 21px;
+    position: absolute;
+    top: 44px;
+    left: 617px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}   
+.header_title_text{
+    color: rgba(45, 45, 45, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navi{
+    text-decoration: none;
+}
+#phoneimage{
+    /* ic-baseline-local-phone */
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 1369px;
+    top: 40px;
+}
+#phonenumber{
+    /* +7 (351) 777-80-70 */
+    width: 149px;
+    height: 24px;
+    color: rgba(45, 45, 45, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    left: 1393px;
+}
+#phonetext{
+    /* Заказать звонок */
+    width: 102px;
+    height: 18px;
+    color: rgba(45, 45, 45, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    left: 1450px;
+    top: 55px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+#arrow_contact{
+    /* arrow */
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 44px;
+    left: 1550px;
+}
+#mainphoto_header{
+    /* photo-1516216628859-9bccecab13ca 1 */
+    width: 974px;
+    height: 606px;
+    background: url(images/mainphoto.png);
+    position: absolute;
+    left: 755px;
+    top: 81px;
+}
+#textheader{
+    /* охрана труда пожарная безопасность обучение сотрудников */
+    width: 448px;
+    height: 144px;color: rgba(62, 62, 61, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 284px;
+    left: 360px;
+}
+#h1_uslugi{
+    /* наши услуги */
+    color: rgba(0, 0, 0, 1);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 786px;
+    left: 831px;
+}
+#line1{
+    background: url(images/firstline.png);
+    /* Vector 28 */
+    width: 371.5px;
+    height: 250.08px;
+    position: absolute;
+    top: 960px;
+}
+#image1{
+    background: url(images/firstimage_uslugi.png);
+    /* Group */
+    width: 379.65px;
+    height: 320.47px;
+    position: absolute;
+    left: 362px;
+    top: 890px;
+}
+#text1_uslugi{
+    /* Промышленная безопасность */
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 964px;
+    left: 883px;
+}
+#text2{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 1027px;
+    left: 883px;
+}
+#button_more{
+    /* Frame 8 */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 145, 27, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 1137px;
+    left: 1292px;
+
+    .button_text{
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+#button_more:hover{
+    /* btn_hover */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    border-radius: 5px;
+    background: rgba(220, 145, 27, 1);
+
+    .button_text{
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+#line2{
+    background: url(images/secondline.png);
+    /* Vector 25 */
+    width: 610.5px;
+    height: 404.14px;
+    position: absolute;
+    top: 1208.2px;
+    left: 701px;
+}
+#image2{
+    background: url(images/secondimage_uslugi.png);
+    /* Group */
+    /* Group */
+    width: 331.96px;
+    height: 304.24px;
+    position: absolute;
+    left: 1237px;   
+    top: 1309px;
+}
+#text2_uslugi{
+    /* Промышленная безопасность */
+    width: 190px;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    top: 395px;
+    right: 353px;
+}
+#text22{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    position: relative;
+    top: 458px;
+    right: 353px;
+}
+#button_more2{
+    /* Frame 8 */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 145, 27, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 1615px;
+    left: 892px;
+
+    .button_text{
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+#button_more2:hover{
+    /* btn_hover */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    border-radius: 5px;
+    background: rgba(220, 145, 27, 1);
+
+    .button_text{
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+#line3{
+    background: url(images/thirdline.png);
+    /* Vector 26 */
+    width: 902.57px;
+    height: 483.18px;
+    position: absolute;
+    top: 1611px;
+    left: 747px;
+}
+#image3{
+    background: url(images/thirdimage_uslugi.png);
+    /* Group */
+    width: 388.24px;
+    height: 310.55px;
+    position: absolute;
+    left: 395px;   
+    top: 1719px;
+}
+#text3_uslugi{
+    /* Промышленная безопасность */
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1820px;
+    left: 884px;
+}
+#text23{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 1883px;
+    left: 883px;
+}
+#button_more3{
+    /* Frame 8 */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 145, 27, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 1993px;
+    left: 1290px;
+
+    .button_text{
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+#button_more3:hover{
+    /* btn_hover */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    border-radius: 5px;
+    background: rgba(220, 145, 27, 1);
+
+    .button_text{
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+#line4{
+    background: url(images/fourththird.png);
+    /* Vector 27 */
+    width: 1200.5px;
+    height: 571.84px;
+    position: absolute;
+    top: 2028px;
+    left: 163px;
+}
+#image4{
+    background: url(images/fourthimage_uslugi.png);
+    /* Group 9 */  
+    width: 434px;
+    height: 323px;
+    position: relative;
+    left: 1150px;   
+    top: 1450px;
+}
+#text4_uslugi{
+    /* Промышленная безопасность */
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2206px;
+    left: 487px;
+}
+#text24{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 2294px;
+    left: 486px;
+}
+#button_more4{
+    /* Frame 8 */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 145, 27, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 2404px;
+    left: 892px;
+
+    .button_text{
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+#button_more4:hover{
+    /* btn_hover */
+    width: 166px;
+    height: 39px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px 11px 26px;
+    border-radius: 5px;
+    background: rgba(220, 145, 27, 1);
+
+    .button_text{
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+#line5{
+    background: url(images/fiveline.png);
+    /* Vector 29 */
+    width: 368.06px;
+    height: 256.82px;
+    position: absolute;
+    top: 2392px;
+    left: 1560px;
+}
+#otzivi{
+    /* Rectangle 164 */
+    width: 1924px;
+    height: 758px;
+    background: rgba(62, 62, 61, 1);
+    position: absolute;
+    top: 2662px;
+
+}
+#image_otzivi{
+    background: url(images/otzivi_image.png);
+    /* Group */
+    width: 577.85px;
+    height: 534.19px;
+    position: absolute;
+    top: 77px;
+    left: 1053px;
+}
+#otzivi_text{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 125px;
+    left: 564px;
+}
+#certificat1{
+    /* Rectangle 20 */
+    background: url(images/Rectangle\ 20.png);
+    width: 240px;
+    height: 330px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 274px;
+    left: 276px;
+}
+#certificat2{
+    /* Rectangle 20 */
+    background: url(images/Rectangle\ 17.png);
+    width: 240px;
+    height: 330px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 274px;
+    left: 565px;
+}
+#certificat3{
+    /* Rectangle 20 */
+    background: url(images/Rectangle\ 18.png);
+    width: 240px;
+    height: 330px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 274px;
+    left: 854px;
+}
+#otzivi_text2{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: 670px;
+    left: 910px;
+    text-decoration: none;
+}
+#button_right{
+    width: 34px;
+    height: 34px;
+    background: rgba(220, 145, 27, 1);
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 656px;
+    left: 686px;
+}
+#button_left{
+    width: 34px;
+    height: 34px;
+    background: rgba(196, 196, 196, 1);
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 656px;
+    left: 652px;
+}
