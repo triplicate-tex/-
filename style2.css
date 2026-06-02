@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2d2d2d;
+    background: #fff;
+}
+
+/* ====== ШАПКА ====== */
+#header {
+    width: 100%;
+    height: 687px;
+    background: rgba(220, 146, 27, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+#logo {
+    width: 191.78px;
+    height: 74.84px;
+    position: absolute;
+    top: calc(17 / 1920 * 100vw);
+    left: calc(360 / 1920 * 100vw);
+}
+#navigation {
+    position: absolute;
+    top: calc(44 / 1920 * 100vw);
+    left: calc(617 / 1920 * 100vw);
+}
+#header_title {
+    width: 685px;
+    list-style: none;
+    display: flex;
+    gap: 42px;
+}
+.header_title_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+.navi {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+/* Контакты */
+#phoneimage {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: calc(537 / 1920 * 100vw);
+    top: calc(40 / 1920 * 100vw);
+}
+#phonenumber {
+    width: 149px;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    top: calc(35 / 1920 * 100vw);
+    right: calc((1920 - 1393 - 149) / 1920 * 100vw);
+}
+#phonetext {
+    width: 102px;
+    font-size: 12px;
+    text-decoration: underline dotted;
+    color: #2d2d2d;
+    position: absolute;
+    right: calc((1920 - 1450 - 102) / 1920 * 100vw);
+    top: calc(55 / 1920 * 100vw);
+}
+#arrow_contact {
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: calc(44 / 1920 * 100vw);
+    right: calc((1920 - 1550 - 10) / 1920 * 100vw);
+}
+
+/* Главное фото – тень убрана */
+#mainphoto_header {
+    width: 974px;
+    height: 606px;
+    background: url(images/mainphoto.png) no-repeat center/cover;
+    position: absolute;
+    right: calc((1920 - 755 - 974) / 1920 * 100vw);
+    top: calc(81 / 1920 * 100vw);
+    border-radius: 8px;
+}
+#textheader {
+    width: 448px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #3e3e3d;
+    position: absolute;
+    top: calc(284 / 1920 * 100vw);
+    left: calc(360 / 1920 * 100vw);
+}
+
+/* ====== УСЛУГИ ====== */
+#h1_uslugi {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    top: calc(786 / 1920 * 100vw);
+    left: calc(831 / 1920 * 100vw);
+}
+
+/* Блок 1 */
+#line1 { background: url(images/firstline.png); width: 371.5px; height: 250.08px; position: absolute; top: calc(960 / 1920 * 100vw); }
+#image1 { background: url(images/firstimage_uslugi.png) no-repeat center/contain; width: 379.65px; height: 320.47px; position: absolute; left: calc(362 / 1920 * 100vw); top: calc(890 / 1920 * 100vw); }
+#text1_uslugi { font-weight: 700; font-size: 24px; text-transform: uppercase; position: absolute; top: calc(964 / 1920 * 100vw); left: calc(883 / 1920 * 100vw); }
+#text2 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(1027 / 1920 * 100vw); left: calc(883 / 1920 * 100vw); }
+#button_more {
+    width: 166px; height: 39px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 11px 26px;
+    border: 1px solid rgba(220,145,27,1); border-radius: 5px;
+    background: transparent; cursor: pointer;
+    position: absolute; top: calc(1137 / 1920 * 100vw); left: calc(1292 / 1920 * 100vw);
+    transition: 0.2s;
+}
+#button_more .button_text { color: #000; font-size: 14px; }
+#button_more:hover { background: rgba(220,145,27,1); }
+#button_more:hover .button_text { color: #fff; }
+
+/* Блок 2 (охрана труда) */
+#line2 { background: url(images/secondline.png); width: 610.5px; height: 404.14px; position: absolute; top: calc(1208.2 / 1920 * 100vw); left: calc(701 / 1920 * 100vw); }
+#image2 { background: url(images/secondimage_uslugi.png) no-repeat center/contain; width: 331.96px; height: 304.24px; position: absolute; right: calc((1920 - 1237 - 331.96) / 1920 * 100vw); top: calc(1309 / 1920 * 100vw); }
+#text2_uslugi { width: 190px; font-weight: 700; font-size: 24px; text-transform: uppercase; position: relative; top: calc(395 / 1920 * 100vw); right: calc(353 / 1920 * 100vw); }
+#text22 { font-size: 16px; line-height: 1.5; position: relative; top: calc(458 / 1920 * 100vw); right: calc(353 / 1920 * 100vw); }
+#button_more2 {
+    width: 166px; height: 39px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 11px 26px;
+    border: 1px solid rgba(220,145,27,1); border-radius: 5px;
+    background: transparent; cursor: pointer;
+    position: absolute; top: calc(1615 / 1920 * 100vw); left: calc(892 / 1920 * 100vw);
+    transition: 0.2s;
+}
+#button_more2 .button_text { color: #000; font-size: 14px; }
+#button_more2:hover { background: rgba(220,145,27,1); }
+#button_more2:hover .button_text { color: #fff; }
+
+/* Блок 3 */
+#line3 { background: url(images/thirdline.png); width: 902.57px; height: 485.18px; position: absolute; top: calc(1611 / 1920 * 100vw); left: calc(747 / 1920 * 100vw); }
+#image3 { background: url(images/thirdimage_uslugi.png) no-repeat center/contain; width: 388.24px; height: 310.55px; position: absolute; left: calc(395 / 1920 * 100vw); top: calc(1719 / 1920 * 100vw); }
+#text3_uslugi { font-weight: 700; font-size: 24px; text-transform: uppercase; position: absolute; top: calc(1820 / 1920 * 100vw); left: calc(884 / 1920 * 100vw); }
+#text23 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(1883 / 1920 * 100vw); left: calc(883 / 1920 * 100vw); }
+#button_more3 {
+    width: 166px; height: 39px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 11px 26px;
+    border: 1px solid rgba(220,145,27,1); border-radius: 5px;
+    background: transparent; cursor: pointer;
+    position: absolute; top: calc(1993 / 1920 * 100vw); left: calc(1290 / 1920 * 100vw);
+    transition: 0.2s;
+}
+#button_more3 .button_text { color: #000; font-size: 14px; }
+#button_more3:hover { background: rgba(220,145,27,1); }
+#button_more3:hover .button_text { color: #fff; }
+
+/* Блок 4 */
+#line4 { background: url(images/fourththird.png); width: 1200.5px; height: 573.84px; position: absolute; top: calc(2028 / 1920 * 100vw); left: calc(163 / 1920 * 100vw); }
+#image4 { background: url(images/fourthimage_uslugi.png) no-repeat center/contain; width: 434px; height: 323px; position: relative; left: calc(1150 / 1920 * 100vw); top: calc(1450 / 1920 * 100vw); }
+#text4_uslugi { font-weight: 700; font-size: 24px; text-transform: uppercase; position: absolute; top: calc(2206 / 1920 * 100vw); left: calc(487 / 1920 * 100vw); }
+#text24 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(2294 / 1920 * 100vw); left: calc(486 / 1920 * 100vw); }
+#button_more4 {
+    width: 166px; height: 39px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 11px 26px;
+    border: 1px solid rgba(220,145,27,1); border-radius: 5px;
+    background: transparent; cursor: pointer;
+    position: absolute; top: calc(2404 / 1920 * 100vw); left: calc(892 / 1920 * 100vw);
+    transition: 0.2s;
+}
+#button_more4 .button_text { color: #000; font-size: 14px; }
+#button_more4:hover { background: rgba(220,145,27,1); }
+#button_more4:hover .button_text { color: #fff; }
+
+#line5 { background: url(images/fiveline.png); width: 365.06px; height: 256.82px; position: absolute; top: calc(2392 / 1920 * 100vw); left: calc(1560 / 1920 * 100vw); }
+
+/* ====== ОТЗЫВЫ ====== */
+#otzivi {
+    width: 100%; height: 758px;
+    background: rgba(62,62,61,1);
+    position: absolute; top: calc(2662 / 1920 * 100vw);
+    color: #fff;
+}
+#image_otzivi { background: url(images/otzivi_image.png) no-repeat center/contain; width: 577.85px; height: 534.19px; position: absolute; top: calc(77 / 1920 * 100vw); right: calc((1920 - 1053 - 577.85) / 1920 * 100vw); }
+#otzivi_text { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; top: calc(125 / 1920 * 100vw); left: calc(564 / 1920 * 100vw); }
+#certificat1, #certificat2, #certificat3 { width: 240px; height: 330px; background-size: cover; background-repeat: no-repeat; position: absolute; top: calc(274 / 1920 * 100vw); }
+#certificat1 { left: calc(276 / 1920 * 100vw); background-image: url(images/Rectangle\ 20.png); }
+#certificat2 { left: calc(565 / 1920 * 100vw); background-image: url(images/Rectangle\ 17.png); }
+#certificat3 { left: calc(854 / 1920 * 100vw); background-image: url(images/Rectangle\ 18.png); }
+#otzivi_text2 { font-weight: 700; font-size: 18px; text-transform: uppercase; text-decoration: none; color: #fff; position: absolute; top: calc(670 / 1920 * 100vw); left: calc(910 / 1920 * 100vw); }
+#button_right { width: 34px; height: 34px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; top: calc(656 / 1920 * 100vw); left: calc(686 / 1920 * 100vw); }
+#button_left { width: 34px; height: 34px; background: rgba(196,196,196,1); border: 0; cursor: pointer; position: absolute; top: calc(656 / 1920 * 100vw); left: calc(652 / 1920 * 100vw); }
+
+/* ====== ПРОЕКТЫ ====== */
+#main_text_proekti { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; top: calc(3497 / 1920 * 100vw); left: calc(462 / 1920 * 100vw); }
+#image_proekt1, #image_proekt2 { width: 556px; height: 312px; background-size: cover; position: absolute; }
+#image_proekt1 { top: calc(3638 / 1920 * 100vw); left: calc(668 / 1920 * 100vw); background-image: url(images/image_proekt1.jpg); }
+#image_proekt2 { top: calc(4056 / 1920 * 100vw); left: calc(668 / 1920 * 100vw); background-image: url(images/image_proekt2.jpg); }
+#name_proekt1, #name_proekt2 { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; left: calc(462 / 1920 * 100vw); }
+#name_proekt1 { top: calc(3784 / 1920 * 100vw); }
+#name_proekt2 { top: calc(4202 / 1920 * 100vw); }
+#date_proekt1, #date_proekt2 { font-weight: 700; font-size: 14px; color: #6f6f6e; position: absolute; left: calc(462 / 1920 * 100vw); }
+#date_proekt1 { top: calc(3916 / 1920 * 100vw); }
+#date_proekt2 { top: calc(4351 / 1920 * 100vw); }
+#text_proekt1, #text_proekt2 { font-size: 16px; line-height: 1.5; position: absolute; left: calc(1283 / 1920 * 100vw); }
+#text_proekt1 { top: calc(3785 / 1920 * 100vw); }
+#text_proekt2 { top: calc(4207 / 1920 * 100vw); }
+#button_right_proekt1, #button_right_proekt2 { width: 42px; height: 42px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; left: calc(1488 / 1920 * 100vw); }
+#button_right_proekt1 { top: calc(3904 / 1920 * 100vw); }
+#button_right_proekt2 { top: calc(4326 / 1920 * 100vw); }
+#moreproekt { font-weight: 700; font-size: 18px; text-transform: uppercase; text-decoration: none; color: #000; position: absolute; top: calc(4460 / 1920 * 100vw); left: calc(1407 / 1920 * 100vw); }
+
+/* ====== НОВОСТИ ====== */
+#levaya_storona { background: rgba(237,238,239,1); width: 955px; height: 471px; position: absolute; top: calc(4570 / 1920 * 100vw); }
+#pravaya_storona { position: absolute; top: calc(4570 / 1920 * 100vw); left: calc(955 / 1920 * 100vw); width: 965px; height: 471px; }
+#news_text { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; top: calc(117 / 1920 * 100vw); left: calc(379 / 1920 * 100vw); }
+#news_image { background: url(images/news_image.png) no-repeat center/contain; width: 112.65px; height: 268.1px; position: absolute; top: calc(268 / 1920 * 100vw); left: calc(418 / 1920 * 100vw); }
+#namenews1 { font-weight: 700; font-size: 18px; text-transform: uppercase; position: absolute; top: calc(118 / 1920 * 100vw); left: calc(666 / 1920 * 100vw); }
+#date1 { font-weight: 300; font-size: 14px; color: #6f6f6e; position: absolute; top: calc(156 / 1920 * 100vw); left: calc(666 / 1920 * 100vw); }
+#textnews1 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(189 / 1920 * 100vw); left: calc(666 / 1920 * 100vw); }
+#button_right_news1 { width: 42px; height: 42px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; top: calc(284 / 1920 * 100vw); left: calc(666 / 1920 * 100vw); }
+#namenews2 { font-weight: 700; font-size: 18px; text-transform: uppercase; position: absolute; top: calc(118 / 1920 * 100vw); left: calc(50 / 1920 * 100vw); }
+#date2 { font-weight: 300; font-size: 14px; color: #6f6f6e; position: absolute; top: calc(156 / 1920 * 100vw); left: calc(50 / 1920 * 100vw); }
+#textnews2 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(189 / 1920 * 100vw); left: calc(50 / 1920 * 100vw); }
+#button_right_news2 { width: 42px; height: 42px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; top: calc(284 / 1920 * 100vw); left: calc(50 / 1920 * 100vw); }
+#namenews3 { font-weight: 700; font-size: 18px; text-transform: uppercase; position: absolute; top: calc(118 / 1920 * 100vw); left: calc(386 / 1920 * 100vw); }
+#date3 { font-weight: 300; font-size: 14px; color: #6f6f6e; position: absolute; top: calc(156 / 1920 * 100vw); left: calc(386 / 1920 * 100vw); }
+#textnews3 { font-size: 16px; line-height: 1.5; position: absolute; top: calc(189 / 1920 * 100vw); left: calc(386 / 1920 * 100vw); }
+#button_right_news3 { width: 42px; height: 42px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; top: calc(284 / 1920 * 100vw); left: calc(386 / 1920 * 100vw); }
+#verticalline { border-left: 1px solid rgba(177,177,176,1); height: 247px; position: absolute; top: calc(96 / 1920 * 100vw); left: calc(336 / 1920 * 100vw); }
+#morenews { font-weight: 700; font-size: 18px; text-transform: uppercase; text-decoration: none; color: #000; position: absolute; top: calc(380 / 1920 * 100vw); left: calc(474 / 1920 * 100vw); }
+
+/* ====== ОБРАТНАЯ СВЯЗЬ ====== */
+#feedback { width: 617px; height: 197px; background: rgba(255,224,176,1); position: absolute; top: calc(5256 / 1920 * 100vw); left: calc(628 / 1920 * 100vw); }
+#namefeedback { font-weight: 700; font-size: 24px; text-transform: uppercase; position: absolute; top: calc(28 / 1920 * 100vw); left: calc(247 / 1920 * 100vw); }
+#textfeedback { font-size: 14px; position: absolute; top: calc(68 / 1920 * 100vw); left: calc(180 / 1920 * 100vw); }
+#name { width: 142px; padding: 3px; font-size: 12px; border: none; border-bottom: 1px solid rgba(220,145,27,1); background: transparent; position: absolute; top: calc(115 / 1920 * 100vw); left: calc(153 / 1920 * 100vw); }
+#phone { width: 142px; padding: 3px; font-size: 12px; border: none; border-bottom: 1px solid rgba(62,62,61,1); background: transparent; position: absolute; top: calc(115 / 1920 * 100vw); left: calc(349 / 1920 * 100vw); }
+#otpravka { width: 161px; height: 39px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 11px 26px; border: 1px solid rgba(220,145,27,1); border-radius: 5px; background: transparent; font-size: 14px; cursor: pointer; position: absolute; top: calc(175 / 1920 * 100vw); left: calc(228 / 1920 * 100vw); }
+#line_feedback { background: url(images/feedback_line.png); width: 100%; height: 180px; position: absolute; top: calc(5184 / 1920 * 100vw); }
+#image1_feedback { background: url(images/feedback_image1.png) no-repeat center/contain; width: 122.89px; height: 284.51px; position: absolute; top: calc(5183 / 1920 * 100vw); left: calc(554 / 1920 * 100vw); }
+#image2_feedback { background: url(images/feedback_image2.png) no-repeat center/contain; width: 120px; height: 285px; position: absolute; top: calc(5194 / 1920 * 100vw); left: calc(1165 / 1920 * 100vw); }
+
+/* ====== СТАТЬИ ====== */
+#states { position: absolute; top: calc(5638 / 1920 * 100vw); width: 100%; height: 258px; }
+#name_states { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; left: calc(360 / 1920 * 100vw); }
+#block1 { position: absolute; top: calc(90 / 1920 * 100vw); left: calc(390 / 1920 * 100vw); }
+#block2 { position: absolute; top: calc(90 / 1920 * 100vw); left: calc(688 / 1920 * 100vw); }
+#block3 { position: absolute; top: calc(90 / 1920 * 100vw); left: calc(986 / 1920 * 100vw); }
+#block4 { position: absolute; top: calc(90 / 1920 * 100vw); left: calc(1284 / 1920 * 100vw); }
+.name_block { font-weight: 700; font-size: 16px; margin-bottom: 10px; }
+.date_block { font-weight: 300; font-size: 12px; color: #c6c6c6; margin-bottom: 10px; }
+.text_block { font-size: 12px; line-height: 1.5; }
+
+/* ====== СЕРТИФИКАТЫ ====== */
+#certificates { width: 100%; height: 758px; background: rgba(62,62,61,1); position: absolute; top: calc(6068 / 1920 * 100vw); color: #fff; }
+#image_certificates { background: url(images/certificate_image.png) no-repeat center/contain; width: 484px; height: 496.91px; position: absolute; top: calc(147 / 1920 * 100vw); right: calc((1920 - 1191 - 484) / 1920 * 100vw); }
+#certificat_text { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; top: calc(125 / 1920 * 100vw); left: calc(564 / 1920 * 100vw); }
+#certificat_text2 { font-weight: 700; font-size: 18px; text-transform: uppercase; text-decoration: none; color: #fff; position: absolute; top: calc(670 / 1920 * 100vw); left: calc(910 / 1920 * 100vw); }
+#button_right1 { width: 34px; height: 34px; background: rgba(220,145,27,1); border: 0; cursor: pointer; position: absolute; top: calc(656 / 1920 * 100vw); left: calc(686 / 1920 * 100vw); }
+#button_left1 { width: 34px; height: 34px; background: rgba(196,196,196,1); border: 0; cursor: pointer; position: absolute; top: calc(656 / 1920 * 100vw); left: calc(652 / 1920 * 100vw); }
+
+/* ====== КЛИЕНТЫ ====== */
+#clients { width: 100%; height: 613px; position: absolute; top: calc(6768 / 1920 * 100vw); }
+#name_clients { font-weight: 700; font-size: 36px; text-transform: uppercase; position: absolute; top: calc(100 / 1920 * 100vw); left: calc(565 / 1920 * 100vw); }
+#brands { width: 1200px; height: 360px; box-sizing: border-box; border: 2px solid rgba(242,242,242,1); background: #fff; position: absolute; top: calc(200 / 1920 * 100vw); left: calc(350 / 1920 * 100vw); }
+#brand1 { background: url(images/vega.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(60 / 1920 * 100vw); left: calc(40 / 1920 * 100vw); }
+#brand2 { background: url(images/ducharme.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(60 / 1920 * 100vw); left: calc(340 / 1920 * 100vw); }
+#brand3 { background: url(images/volans.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(60 / 1920 * 100vw); left: calc(640 / 1920 * 100vw); }
+#brand4 { background: url(images/mattias.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(60 / 1920 * 100vw); left: calc(940 / 1920 * 100vw); }
+#brand5 { background: url(images/volans.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(240 / 1920 * 100vw); left: calc(40 / 1920 * 100vw); }
+#brand6 { background: url(images/mattias.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(240 / 1920 * 100vw); left: calc(340 / 1920 * 100vw); }
+#brand7 { background: url(images/poff.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(240 / 1920 * 100vw); left: calc(640 / 1920 * 100vw); }
+#brand8 { background: url(images/ducharme.png) no-repeat center/contain; width: 220px; height: 60px; position: absolute; top: calc(240 / 1920 * 100vw); left: calc(940 / 1920 * 100vw); }
+
+/* ====== ПОДВАЛ ====== */
+#footer { width: 100%; height: 383px; background: rgba(62,62,61,1); position: absolute; top: calc(7410 / 1920 * 100vw); color: #fff; }
+#footer_table { position: absolute; top: calc(30 / 1920 * 100vw); left: calc(360 / 1920 * 100vw); width: 1200px; border-bottom: 1px solid rgba(119,126,137,1); padding-bottom: 50px; }
+#onas_name { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+.onas_text { color: rgba(119,126,137,1); font-size: 14px; line-height: 27px; list-style: none; }
+#katalog { position: absolute; left: calc(262 / 1920 * 100vw); top: 0; }
+#katalog_name { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+.katalog_text { color: rgba(119,126,137,1); font-size: 14px; line-height: 27px; list-style: none; }
+#contacts { position: absolute; left: calc(516 / 1920 * 100vw); top: 0; }
+#contacts_name { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+#forma_poisk { position: absolute; left: calc(779 / 1920 * 100vw); top: 0; }
+input[type="search"] { color: white; padding: 20px; width: 420px; height: 43px; border: 1px solid rgba(255,255,255,1); border-radius: 3px; background: rgba(62,62,61,1); }
+#email { color: #fff; font-size: 14px; position: absolute; left: calc(805 / 1920 * 100vw); top: calc(73 / 1920 * 100vw); }
+#email_png { width: 16px; height: 13px; position: absolute; top: calc(76 / 1920 * 100vw); left: calc(779 / 1920 * 100vw); }
+#city { color: #fff; font-size: 14px; position: absolute; left: calc(805 / 1920 * 100vw); top: calc(113 / 1920 * 100vw); }
+#city_png { width: 14px; height: 18px; position: absolute; top: calc(113 / 1920 * 100vw); left: calc(779 / 1920 * 100vw); }
+#phonenumber_2 { color: #fff; font-size: 14px; font-weight: bold; position: absolute; left: calc(1050 / 1920 * 100vw); top: calc(73 / 1920 * 100vw); }
+#phone_2 { width: 16px; height: 16px; position: absolute; top: calc(75 / 1920 * 100vw); left: calc(1024 / 1920 * 100vw); }
+#footer_button { background: rgba(253,153,19,1); width: 175px; height: 41px; color: #fff; font-size: 14px; font-weight: 500; border: none; border-radius: 3px; cursor: pointer; position: absolute; left: calc(1024 / 1920 * 100vw); top: calc(107 / 1920 * 100vw); }
+#footer_end_text { color: rgba(119,126,137,1); font-size: 13px; position: absolute; top: calc(279 / 1920 * 100vw); left: calc(5 / 1920 * 100vw); }
+#footer_logo { background: url(images/logo_footer.png) no-repeat center/contain; width: 100px; height: 25px; position: absolute; top: calc(279 / 1920 * 100vw); left: calc(550 / 1920 * 100vw); }
+
+/* ========== МЕДИАЗАПРОСЫ ========== */
+@media (max-width: 1200px) {
+    #header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    #logo { position: static; margin-bottom: 15px; }
+    #navigation { position: static; margin-bottom: 20px; }
+    #header_title { width: auto; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    #contact_info {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #phoneimage, #phonenumber, #phonetext, #arrow_contact { position: static; margin: 2px 0; }
+    #mainphoto_header {
+        position: static;
+        width: 90%;
+        height: 300px;
+        margin: 20px auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #textheader { position: static; width: auto; text-align: center; margin: 20px; font-size: 28px; }
+
+    #uslugi {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 60px;
+    }
+    #h1_uslugi { position: static; margin-bottom: 10px; }
+    #firstblock, #secondblock, #thirdblock, #fourthblock {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #image1, #image2, #image3, #image4 {
+        position: static;
+        width: 250px !important;
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+    #text1_uslugi, #text2_uslugi, #text3_uslugi, #text4_uslugi,
+    #text2, #text22, #text23, #text24 { position: static; width: auto; margin: 10px 0; text-align: center; }
+    #button_more, #button_more2, #button_more3, #button_more4 { position: static; margin: 15px auto; display: inline-flex; }
+    #line1, #line2, #line3, #line4, #line5 { display: none; }
+
+    #otzivi {
+        position: static;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        background: #3e3e3d;
+        color: #fff;
+    }
+    #otzivi_text { position: static; margin-bottom: 30px; text-align: center; }
+    #certificat1, #certificat2, #certificat3 { position: static; width: 180px; height: 250px; margin: 10px; display: inline-block; }
+    #image_otzivi { position: static; width: 250px; height: auto; margin: 20px 0; }
+    #otzivi_text2 { position: static; margin: 20px 0; }
+    #button_right, #button_left { position: static; display: inline-block; margin: 5px; }
+
+    #proekti {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    #main_text_proekti { position: static; margin-bottom: 30px; }
+    #image_proekt1, #image_proekt2 { position: static; width: 90%; max-width: 500px; height: 250px; margin: 20px auto; background-size: cover; }
+    #name_proekt1, #name_proekt2, #date_proekt1, #date_proekt2, #text_proekt1, #text_proekt2,
+    #button_right_proekt1, #button_right_proekt2, #moreproekt { position: static; text-align: center; margin: 5px 0; }
+
+    #levaya_storona, #pravaya_storona {
+        position: static;
+        width: 100%;
+        height: auto;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #news_text { position: static; margin-bottom: 20px; }
+    #news_image { position: static; width: 80px; height: auto; margin: 20px 0; }
+    #namenews1, #date1, #textnews1, #button_right_news1,
+    #namenews2, #date2, #textnews2, #button_right_news2,
+    #namenews3, #date3, #textnews3, #button_right_news3 { position: static; text-align: center; margin: 5px 0; }
+    #verticalline { display: none; }
+    #morenews { position: static; display: block; margin: 20px 0; }
+
+    #obratnaya_svayz {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    #line_feedback { display: none; }
+    #image1_feedback, #image2_feedback { position: static; width: 80px; height: auto; margin: 10px; }
+    #feedback { position: static; width: 100%; max-width: 500px; height: auto; padding: 30px; margin: 20px 0; }
+    #namefeedback, #textfeedback, #name, #phone, #otpravka { position: static; margin: 10px auto; display: block; text-align: center; }
+
+    #states {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    #name_states { position: static; margin-bottom: 30px; }
+    #block1, #block2, #block3, #block4 { position: static; margin: 20px 0; text-align: center; }
+
+    #certificates {
+        position: static;
+        height: auto;
+        background: #3e3e3d;
+        color: #fff;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #certificat_text { position: static; margin-bottom: 20px; }
+    #image_certificates { position: static; width: 250px; height: auto; margin: 20px 0; }
+    #certificat_text2 { position: static; margin: 20px 0; }
+    #button_right1, #button_left1 { position: static; display: inline-block; margin: 5px; }
+
+    #clients { position: static; height: auto; padding: 40px 20px; }
+    #name_clients { position: static; text-align: center; margin-bottom: 30px; }
+    #brands {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        border: none;
+    }
+    #brand1, #brand2, #brand3, #brand4, #brand5, #brand6, #brand7, #brand8 {
+        position: static;
+        width: 100% !important;
+        height: 60px !important;
+        background-size: contain;
+    }
+
+    #footer { position: static; height: auto; padding: 40px 20px; background: #3e3e3d; color: #fff; }
+    #footer_table {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        border-bottom: 1px solid #777e89;
+        padding-bottom: 30px;
+    }
+    #katalog, #contacts, #forma_poisk { position: static; }
+    input[type="search"] { width: 100%; max-width: 300px; }
+    #email_png, #city_png, #phone_2 { position: static; display: inline-block; margin-right: 5px; }
+    #email, #city, #phonenumber_2 { position: static; display: inline-block; }
+    #footer_button { position: static; margin: 10px 0; }
+    #footer_end_text { position: static; text-align: center; margin: 20px 0; }
+    #footer_logo { position: static; margin: 0 auto; }
+}
+
+@media (max-width: 768px) {
+    #mainphoto_header { height: 200px; }
+    #textheader { font-size: 22px; }
+    #h1_uslugi { font-size: 28px; }
+    #image1, #image2, #image3, #image4 { width: 180px !important; }
+    #certificat1, #certificat2, #certificat3 { width: 140px; height: 200px; }
+    #brands { grid-template-columns: repeat(2, 1fr); }
+}
