@@ -9,8 +9,8 @@
 
 body {
     width: 100%;
-    max-width: 1920px;            /* ограничиваем ширину макетом */
-    margin: 0 auto;               /* центрируем */
+    max-width: 1920px;
+    margin: 0 auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #2d2d2d;
     background: #fff;
@@ -21,13 +21,12 @@ body {
    ============================================================ */
 #header {
     width: 100%;
-    height: 687px;                /* фиксированная высота для десктопа */
+    height: 687px;
     background: rgba(220, 146, 27, 0.6);
     position: relative;
-    overflow: hidden;             /* обрезаем всё, что выходит за границы */
+    overflow: hidden;
 }
 
-/* Логотип */
 #logo {
     width: 191.78px;
     height: 74.84px;
@@ -36,7 +35,6 @@ body {
     left: calc(360 / 1920 * 100vw);
 }
 
-/* Навигация */
 #navigation {
     position: absolute;
     top: calc(44 / 1920 * 100vw);
@@ -97,7 +95,7 @@ body {
     right: calc((1920 - 1550 - 10) / 1920 * 100vw);
 }
 
-/* Главное фото в шапке (только фон, без тени) */
+/* Главное фото */
 #mainphoto_header {
     width: 974px;
     height: 606px;
@@ -108,7 +106,6 @@ body {
     border-radius: 8px;
 }
 
-/* Заголовок на главном фото */
 #textheader {
     width: 448px;
     font-weight: 700;
@@ -133,7 +130,7 @@ body {
     left: calc(831 / 1920 * 100vw);
 }
 
-/* ---------- Услуга 1 ---------- */
+/* Услуга 1 */
 #line1 {
     background: url(images/firstline.png);
     width: 371.5px;
@@ -199,7 +196,7 @@ body {
     color: #fff;
 }
 
-/* ---------- Услуга 2 (охрана труда) ---------- */
+/* Услуга 2 */
 #line2 {
     background: url(images/secondline.png);
     width: 610.5px;
@@ -267,7 +264,7 @@ body {
     color: #fff;
 }
 
-/* ---------- Услуга 3 ---------- */
+/* Услуга 3 */
 #line3 {
     background: url(images/thirdline.png);
     width: 902.57px;
@@ -334,7 +331,7 @@ body {
     color: #fff;
 }
 
-/* ---------- Услуга 4 ---------- */
+/* Услуга 4 */
 #line4 {
     background: url(images/fourththird.png);
     width: 1200.5px;
@@ -401,7 +398,6 @@ body {
     color: #fff;
 }
 
-/* Декоративная линия */
 #line5 {
     background: url(images/fiveline.png);
     width: 365.06px;
@@ -412,7 +408,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «ОТЗЫВЫ / СЕРТИФИКАТЫ»
+   ОТЗЫВЫ / СЕРТИФИКАТЫ (первый блок)
    ============================================================ */
 #otzivi {
     width: 100%;
@@ -501,7 +497,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «ПРОЕКТЫ»
+   ПРОЕКТЫ
    ============================================================ */
 #main_text_proekti {
     font-weight: 700;
@@ -613,7 +609,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «НОВОСТИ»
+   НОВОСТИ
    ============================================================ */
 #levaya_storona {
     background: rgba(237,238,239,1);
@@ -780,7 +776,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «ОБРАТНАЯ СВЯЗЬ»
+   ОБРАТНАЯ СВЯЗЬ
    ============================================================ */
 #feedback {
     width: 617px;
@@ -876,7 +872,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «СТАТЬИ»
+   СТАТЬИ
    ============================================================ */
 #states {
     position: absolute;
@@ -936,7 +932,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «СЕРТИФИКАТЫ» (второй блок, похожий на отзывы)
+   СЕРТИФИКАТЫ (второй блок)
    ============================================================ */
 #certificates {
     width: 100%;
@@ -999,7 +995,7 @@ body {
 }
 
 /* ============================================================
-   БЛОК «КЛИЕНТЫ» (логотипы партнёров)
+   КЛИЕНТЫ
    ============================================================ */
 #clients {
     width: 100%;
@@ -1101,7 +1097,7 @@ body {
 }
 
 /* ============================================================
-   ПОДВАЛ САЙТА
+   ПОДВАЛ
    ============================================================ */
 #footer {
     width: 100%;
@@ -1269,12 +1265,12 @@ input[type="search"] {
 
     /* ----- Шапка ----- */
     #header {
-        height: auto;                        /* убираем фиксированную высоту */
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
-        overflow: hidden;                    /* оставляем обрезку, чтобы картинка не вылезала */
+        overflow: hidden;
     }
 
     #logo {
@@ -1294,13 +1290,16 @@ input[type="search"] {
         gap: 15px;
     }
 
-    /* Контакты – тоже в поток */
+    /* Контакты: иконка телефона слева от номера, всё в одну строку */
     #contact_info {
         position: static;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 10px;
+        gap: 5px;                /* небольшой отступ между элементами */
     }
 
     #phoneimage,
@@ -1308,10 +1307,30 @@ input[type="search"] {
     #phonetext,
     #arrow_contact {
         position: static;
-        margin: 2px 0;
+        margin: 0;
+        /* убираем вертикальные отступы, чтобы не прыгали */
+        width: auto;             /* сбрасываем фиксированную ширину, если была */
+        height: auto;
+        flex-shrink: 0;
     }
 
-    /* Главное фото: делаем обычным блоком, без абсолютного позиционирования */
+    #phoneimage {
+        order: 0;
+    }
+
+    #phonenumber {
+        order: 1;
+    }
+
+    #phonetext {
+        order: 2;
+    }
+
+    #arrow_contact {
+        order: 3;
+    }
+
+    /* Главное фото */
     #mainphoto_header {
         position: static;
         width: 90%;
@@ -1319,10 +1338,9 @@ input[type="search"] {
         margin: 20px auto;
         background-size: contain;
         background-repeat: no-repeat;
-        /* на всякий случай скрываем возможный тег img внутри */
     }
 
-    /* !!! ИСПРАВЛЕНИЕ ДУБЛИРОВАНИЯ КАРТИНКИ: если внутри лежит img, прячем его */
+    /* Прячем вложенный img, если он есть (дублирование картинки) */
     #mainphoto_header img {
         display: none;
     }
@@ -1398,7 +1416,6 @@ input[type="search"] {
         display: inline-flex;
     }
 
-    /* Декоративные линии на мобильных скрываем */
     #line1,
     #line2,
     #line3,
@@ -1407,7 +1424,7 @@ input[type="search"] {
         display: none;
     }
 
-    /* ----- Отзывы / Сертификаты (первый блок) ----- */
+    /* ----- Отзывы / сертификаты (первый блок) ----- */
     #otzivi {
         position: static;
         height: auto;
@@ -1419,12 +1436,12 @@ input[type="search"] {
         color: #fff;
     }
 
-    /* Заголовок должен быть сверху – принудительно меняем порядок */
+    /* Заголовок всегда сверху */
     #otzivi_text {
         position: static;
         margin-bottom: 30px;
         text-align: center;
-        order: -1;      /* самый первый элемент в флекс-контейнере */
+        order: -1;
     }
 
     #certificat1,
@@ -1444,16 +1461,20 @@ input[type="search"] {
         margin: 20px 0;
     }
 
-    #otzivi_text2 {
-        position: static;
-        margin: 20px 0;
-    }
-
+    /* Кнопки «влево/вправо» */
     #button_right,
     #button_left {
         position: static;
         display: inline-block;
         margin: 5px;
+        order: 1;                /* будут перед текстом «смотреть все» */
+    }
+
+    /* Ссылка «смотреть все сертификаты» – после кнопок */
+    #otzivi_text2 {
+        position: static;
+        margin: 20px 0;
+        order: 2;
     }
 
     /* ----- Проекты ----- */
@@ -1581,12 +1602,24 @@ input[type="search"] {
     #namefeedback,
     #textfeedback,
     #name,
-    #phone,
-    #otpravka {
+    #phone {
         position: static;
         margin: 10px auto;
         display: block;
         text-align: center;
+    }
+
+    /* Кнопка «Оставить заявку»: убираем жёсткую высоту, чтобы текст не вылезал */
+    #otpravka {
+        position: static;
+        display: inline-block;
+        margin: 10px auto;
+        text-align: center;
+        width: auto;                /* пусть подстраивается под контент */
+        min-width: 161px;
+        height: auto;               /* разрешаем кнопке расти по высоте */
+        padding: 11px 26px;
+        white-space: nowrap;        /* чтобы текст был в одну строку */
     }
 
     /* ----- Статьи ----- */
@@ -1614,7 +1647,7 @@ input[type="search"] {
         text-align: center;
     }
 
-    /* ----- Сертификаты (второй блок, тёмный) ----- */
+    /* ----- Сертификаты (второй тёмный блок) ----- */
     #certificates {
         position: static;
         height: auto;
@@ -1626,11 +1659,11 @@ input[type="search"] {
         align-items: center;
     }
 
-    /* Заголовок «Сертификаты» делаем самым первым */
+    /* Заголовок «Сертификаты» – самый первый */
     #certificat_text {
         position: static;
         margin-bottom: 20px;
-        order: -1;      /* поднимаем заголовок над картинкой */
+        order: -1;
     }
 
     #image_certificates {
@@ -1640,16 +1673,20 @@ input[type="search"] {
         margin: 20px 0;
     }
 
-    #certificat_text2 {
-        position: static;
-        margin: 20px 0;
-    }
-
+    /* Кнопки влево/вправо */
     #button_right1,
     #button_left1 {
         position: static;
         display: inline-block;
         margin: 5px;
+        order: 1;
+    }
+
+    /* Ссылка «смотреть все» – после кнопок */
+    #certificat_text2 {
+        position: static;
+        margin: 20px 0;
+        order: 2;
     }
 
     /* ----- Клиенты ----- */
@@ -1703,21 +1740,36 @@ input[type="search"] {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;          /* всё центрируется */
+        text-align: center;           /* текст внутри блоков тоже по центру */
         gap: 30px;
         border-bottom: 1px solid #777e89;
         padding-bottom: 30px;
     }
 
+    /* Чтобы все «столбики» были ровно по центру, даём им одинаковую ширину и отступы */
+    #onas_name,
+    .onas_text,
     #katalog,
     #contacts,
     #forma_poisk {
         position: static;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    /* Дополнительно выравниваем списки внутри каталога и контактов */
+    .onas_text,
+    .katalog_text {
+        text-align: center;
+        padding: 0;
     }
 
     input[type="search"] {
         width: 100%;
         max-width: 300px;
+        margin: 0 auto;
     }
 
     #email_png,
@@ -1726,6 +1778,7 @@ input[type="search"] {
         position: static;
         display: inline-block;
         margin-right: 5px;
+        vertical-align: middle;
     }
 
     #email,
@@ -1733,11 +1786,13 @@ input[type="search"] {
     #phonenumber_2 {
         position: static;
         display: inline-block;
+        vertical-align: middle;
     }
 
     #footer_button {
         position: static;
-        margin: 10px 0;
+        margin: 10px auto;
+        display: block;
     }
 
     #footer_end_text {
@@ -1748,6 +1803,7 @@ input[type="search"] {
 
     #footer_logo {
         position: static;
+        display: block;
         margin: 0 auto;
     }
 }
@@ -1785,5 +1841,13 @@ input[type="search"] {
 
     #brands {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* На самых маленьких экранах ещё раз проверяем кнопку заявки */
+    #otpravka {
+        white-space: normal;      /* разрешаем перенос, если не влезает */
+        width: auto;
+        height: auto;
+        padding: 12px 20px;
     }
 }
